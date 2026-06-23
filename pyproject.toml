@@ -1,0 +1,21 @@
+[project]
+name = "anime-recommendation-agents"
+version = "0.1.0"
+description = "FastAPI anime recommendation backend with future CrewAI multi-agent workflow."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "httpx",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
